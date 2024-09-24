@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bem vindo ao gerenciador"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnClientes"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:text="Clientes"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btnEstoque"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:text="Estoque"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btnVendas"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:text="Vendas"
+        android:textSize="16sp" />
+</LinearLayout>

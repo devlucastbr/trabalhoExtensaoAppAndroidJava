@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="12dp"
+        android:text="Atualização de produto"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="normal" />
+
+    <EditText
+        android:id="@+id/edtNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView3"
+        android:layout_marginBottom="8dp"
+        android:hint="Nome"
+        android:imeOptions="actionNext"
+        android:inputType="text"
+        android:padding="16dp" />
+
+    <EditText
+        android:id="@+id/edtQuantidade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtNome"
+        android:layout_marginBottom="8dp"
+        android:hint="Quantidade"
+        android:inputType="number"
+        android:padding="16dp" />
+
+    <!-- Spinner para seleção de marca -->
+    <Spinner
+        android:id="@+id/spinnerMarcas"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/edtQuantidade"
+        android:background="@drawable/custom_spinner_background"
+        android:contentDescription="Selecione uma marca"
+        android:spinnerMode="dropdown" />
+
+    <EditText
+        android:id="@+id/edtCustoUnitario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinnerMarcas"
+        android:layout_marginBottom="8dp"
+        android:hint="Custo unitário"
+        android:inputType="numberDecimal"
+        android:padding="16dp" />
+
+    <EditText
+        android:id="@+id/edtMargemLucro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtCustoUnitario"
+        android:layout_marginBottom="8dp"
+        android:hint="Margem de lucro"
+        android:inputType="number"
+        android:padding="16dp" />
+
+    <EditText
+        android:id="@+id/edtValorVenda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtMargemLucro"
+        android:layout_marginBottom="8dp"
+        android:clickable="false"
+        android:enabled="false"
+        android:focusable="false"
+        android:hint="Valor de venda"
+        android:padding="16dp"
+        android:visibility="gone" />
+
+    <!-- Spinner para seleção de categorias -->
+    <Spinner
+        android:id="@+id/spinnerCategorias"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/edtValorVenda"
+        android:background="@drawable/custom_spinner_background"
+        android:contentDescription="Selecione uma categoria"
+        android:spinnerMode="dropdown" />
+
+    <EditText
+        android:id="@+id/edtVolume"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinnerCategorias"
+        android:layout_marginBottom="8dp"
+        android:hint="Volume"
+        android:inputType="text"
+        android:padding="16dp" />
+
+    <EditText
+        android:id="@+id/edtValidade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtVolume"
+        android:layout_marginBottom="8dp"
+        android:hint="Validade"
+        android:imeOptions="actionDone"
+        android:inputType="text"
+        android:padding="16dp" />
+
+    <Button
+        android:id="@+id/btnSalvarProduto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_500"
+        android:minHeight="56dip"
+        android:text="Salvar"
+        android:textColor="@color/white" />
+</LinearLayout>

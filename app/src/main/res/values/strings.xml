@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">FragranceFlow</string>
+    <!-- Array de marcas -->
+    <string-array name="marcas_array">
+        <item>Selecione uma marca</item>
+        <item>Avon</item>
+        <item>OBoticário</item>
+        <item>Eudora</item>
+        <item>Importado</item>
+        <item>Natura</item>
+        <item>Outros</item>
+        <!-- Adicione outras marcas conforme necessário -->
+    </string-array>
+    <!-- Array de categorias -->
+    <string-array name="categorias_array">
+        <item>Selecione uma categoria</item>
+        <item>Comésticos</item>
+        <item>Comésticos Infantis</item>
+        <item>Perfumaria Feminina</item>
+        <item>Perfumaria Masculina</item>
+        <item>Perfumaria Infantil</item>
+        <item>Maquiagem</item>
+        <item>Maquiagem Infantil</item>
+        <item>Kits</item>
+        <item>Cestas</item>
+        <item>Mimos</item>
+        <item>Pets</item>
+        <item>Outros</item>
+        <!-- Adicione outras categorias conforme necessário -->
+    </string-array>
+</resources>

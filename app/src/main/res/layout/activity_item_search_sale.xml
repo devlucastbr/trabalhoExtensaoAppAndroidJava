@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:elevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/textVendaId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VendaId" />
+
+        <TextView
+            android:id="@+id/textCliente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cliente" />
+
+        <TextView
+            android:id="@+id/textProduto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Produto" />
+
+        <TextView
+            android:id="@+id/textValorTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Valor Total" />
+
+        <TextView
+            android:id="@+id/textLucro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lucro" />
+
+        <TextView
+            android:id="@+id/textMargem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Margem" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

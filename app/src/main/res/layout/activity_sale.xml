@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:text="Cadastrar venda"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="normal" />
+
+    <EditText
+        android:id="@+id/edtClienteId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView3"
+        android:layout_marginBottom="8dp"
+        android:hint="Código do cliente"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:padding="16dp" />
+
+    <EditText
+        android:id="@+id/edtProdutoId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtClienteId"
+        android:layout_marginBottom="8dp"
+        android:hint="Código do produto"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:padding="16dp" />
+
+    <EditText
+        android:id="@+id/edtQuantidade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtProdutoId"
+        android:layout_marginBottom="8dp"
+        android:hint="Quantidade"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:padding="16dp" />
+
+    <EditText
+        android:id="@+id/edtDataVenda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtQuantidade"
+        android:layout_marginBottom="8dp"
+        android:hint="Data da venda"
+        android:imeOptions="actionDone"
+        android:inputType="text"
+        android:padding="16dp" />
+
+    <Button
+        android:id="@+id/btnAddVenda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtDataVenda"
+        android:layout_marginBottom="12dp"
+        android:background="@color/purple_500"
+        android:minWidth="220dip"
+        android:minHeight="56dip"
+        android:text="Adicionar"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/btnVerTodasVendas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnAddVenda"
+        android:layout_marginBottom="12dp"
+        android:background="@color/purple_500"
+        android:minWidth="220dip"
+        android:minHeight="56dip"
+        android:text="Ver todas as vendas"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/btnPesquisarVendasPorPeriodo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnVerTodasVendas"
+        android:layout_marginBottom="12dp"
+        android:background="@color/purple_500"
+        android:minWidth="280dip"
+        android:minHeight="56dip"
+        android:text="Pesquisar vendas por período"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

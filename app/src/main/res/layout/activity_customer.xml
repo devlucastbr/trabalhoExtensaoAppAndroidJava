@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:text="Cadastrar cliente"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="normal" />
+
+    <EditText
+        android:id="@+id/edtNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView3"
+        android:layout_marginBottom="8dp"
+        android:hint="Nome"
+        android:imeOptions="actionNext"
+        android:inputType="text"
+        android:padding="16dp" />
+
+    <EditText
+        android:id="@+id/edtTelefone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtNome"
+        android:layout_marginBottom="8dp"
+        android:hint="Telefone"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        android:padding="16dp" />
+
+    <Button
+        android:id="@+id/btnAddCliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtTelefone"
+        android:layout_marginBottom="12dp"
+        android:background="@color/purple_500"
+        android:minWidth="220dip"
+        android:minHeight="56dip"
+        android:text="Adicionar"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnAddCliente"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="12dp"
+        android:text="Todos os clientes"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="normal" />
+
+    <ListView
+        android:id="@+id/lstClientes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView2"
+        android:layout_marginTop="12dp" />
+
+</RelativeLayout>
